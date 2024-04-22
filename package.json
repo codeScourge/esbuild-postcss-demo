@@ -1,0 +1,28 @@
+{
+  "name": "esbuild-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-js": "node build.mjs",
+    "watch-css": "postcss ./src/global.css --dir ./dist --watch",
+    "build-css": "postcss ./src/global.css --dir ./dist",
+    "watch": "npm-run-all --parallel watch-css watch-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "esbuild": "^0.20.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-preset-env": "^9.5.8",
+    "tailwindcss": "^3.4.3"
+  }
+}
